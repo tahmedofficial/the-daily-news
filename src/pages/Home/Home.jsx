@@ -22,7 +22,7 @@ const Home = () => {
                     <h2>News</h2>
                 </div>
 
-                <div className="border">
+                <div>
                     <RightSideNav></RightSideNav>
                 </div>
 
