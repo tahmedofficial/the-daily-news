@@ -14,7 +14,7 @@ const Home = () => {
 
             <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
 
-                <div className="border">
+                <div>
                     <LeftSideNav></LeftSideNav>
                 </div>
 
