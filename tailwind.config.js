@@ -12,6 +12,7 @@ export default {
       colors: {
         "ctm-btn-color": '#D72050',
         "ctm-login-color": '#403F3F',
+        "ctm-star-color": '#FF8C47',
       },
     },
   },
