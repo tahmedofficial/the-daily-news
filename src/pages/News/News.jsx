@@ -4,6 +4,9 @@ import { useLoaderData } from "react-router-dom";
 import RightSideNav from "../Shared/RightSideNav/RightSideNav";
 import { GoArrowLeft } from "react-icons/go";
 import { MdOutlineDateRange } from "react-icons/md";
+import editorsInsight1 from "../../assets/images/editorsInsight1.png";
+import editorsInsight2 from "../../assets/images/editorsInsight2.png";
+import editorsInsight3 from "../../assets/images/editorsInsight3.png";
 
 const News = () => {
 
@@ -35,19 +38,33 @@ const News = () => {
 
                     <h2 className="text-2xl font-semibold my-4">Editors Insight</h2>
                     <div className="lg:grid grid-cols-3 gap-4">
-                        {
-                            news.slice(0, 3).map(aNews => <div
-                                className="bg-gray-100 mb-4 p-4 col-span-1 rounded-2xl"
-                                key={aNews._id}>
-                                <img className="w-full lg:h-52 h-96" src={aNews.thumbnail_url} alt="" />
-                                <h1 className="text-xl font-semibold mt-4">{aNews.title.slice(0, 50)}</h1>
-                                <h3 className="flex gap-2 mt-6">
-                                    <MdOutlineDateRange className="text-xl" />
-                                    {aNews.author?.published_date}
-                                </h3>
-                            </div>
-                            )
-                        }
+
+                        <div className="border mb-4 p-4 col-span-1 rounded-2xl">
+                            <img className="" src={editorsInsight1} alt="" />
+                            <h1 className="text-xl font-semibold mt-4">Tucker Carlson has rarely met a dictator puckering up list.</h1>
+                            <h3 className="flex gap-2 mt-6">
+                                <MdOutlineDateRange className="text-xl" />
+                                Jan 4, 2022
+                            </h3>
+                        </div>
+                        <div className="border mb-4 p-4 col-span-1 rounded-2xl">
+                            <img className="" src={editorsInsight2} alt="" />
+                            <h1 className="text-xl font-semibold mt-4">Tucker Carlson has rarely met a dictator puckering up list.</h1>
+                            <h3 className="flex gap-2 mt-6">
+                                <MdOutlineDateRange className="text-xl" />
+                                Jan 4, 2022
+                            </h3>
+                        </div>
+                        <div className="border mb-4 p-4 col-span-1 rounded-2xl">
+                            <img className="" src={editorsInsight3} alt="" />
+                            <h1 className="text-xl font-semibold mt-4">Tucker Carlson has rarely met a dictator puckering up list.</h1>
+                            <h3 className="flex gap-2 mt-6">
+                                <MdOutlineDateRange className="text-xl" />
+                                Jan 4, 2022
+                            </h3>
+                        </div>
+                        
+
                     </div>
                 </div>
 
